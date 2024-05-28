@@ -1,0 +1,61 @@
+/* Gaya global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+/* Gaya untuk komponen MyList */
+.my-list {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+.my-list h2 {
+  margin-bottom: 20px;
+}
+
+.my-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.my-list li {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 0 0 150px; /* lebar tetap untuk setiap item */
+}
+
+.my-list img {
+  width: 100px; /* lebar gambar yang seragam */
+  height: 100px; /* tinggi gambar yang seragam */
+  object-fit: cover; /* menjaga aspek rasio gambar */
+  border-radius: 50%; /* membuat gambar berbentuk lingkaran */
+  margin-bottom: 10px;
+}
