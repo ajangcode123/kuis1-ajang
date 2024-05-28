@@ -43,7 +43,7 @@ const MyList = () => {
       <ul>
         {fruits.map(fruit => (
           <li key={fruit.id}>
-            <img src={fruit.image} alt={fruit.nama} /> - Nama: {fruit.nama} - Warna: {fruit.warna} - Harga: Rp{fruit.harga}
+            <img src={fruit.image} alt={fruit.nama} /> <p>{fruit.nama}</p>  <p>{fruit.warna}</p> <p>Rp{fruit.harga}</p>
           </li>
         ))}
       </ul>
